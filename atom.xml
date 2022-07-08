@@ -1,34 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>安无的博客</title>
   
   
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-07T08:09:43.527Z</updated>
+  <updated>2022-07-08T07:25:14.591Z</updated>
   <id>http://example.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>anwu</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>stellar入门指南</title>
+    <link href="http://example.com/2022/07/08/stellar%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
+    <id>http://example.com/2022/07/08/stellar%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</id>
+    <published>2022-07-08T07:24:35.000Z</published>
+    <updated>2022-07-08T07:25:14.591Z</updated>
+    
+    <content type="html"><![CDATA[<p>欢迎使用 <a href="https://github.com/xaoxuu/hexo-theme-stellar/">Stellar</a> 主题，下面是您的入门指南，祝您使用愉快！<br>        <br><br>        <strong>第一步</strong><br>        创建 <code>blog/_config.stellar.yml</code> 文件，在此文件中填写需要自定义的主题配置。<br>        <br><br>        <strong>第二步</strong><br>        创建 <code>blog/source/_data/widgets.yml</code> 文件，此文件中填写需要自定义的侧边栏组件，例如 <code>welcome</code> 组件。<br>        <br><br>        如果有任何疑问，请先查阅<a href="https://xaoxuu.com/wiki/stellar/">文档</a>，如果文档中没有提供，请提 <a href="https://github.com/xaoxuu/hexo-theme-stellar/issues/">issue</a> 向开发中询问。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;欢迎使用 &lt;a href=&quot;https://github.com/xaoxuu/hexo-theme-stellar/&quot;&gt;Stellar&lt;/a&gt; 主题，下面是您的入门指南，祝您使用愉快！&lt;br&gt;        &lt;br&gt;&lt;br&gt;        &lt;strong&gt;第一步&lt;/str</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>第一个博客</title>
     <link href="http://example.com/2022/07/06/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://example.com/2022/07/06/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</id>
     <published>2022-07-06T04:21:23.000Z</published>
-    <updated>2022-07-07T08:09:43.527Z</updated>
+    <updated>2022-07-08T07:23:35.733Z</updated>
     
-    <content type="html"><![CDATA[<p>喂喂？看得到吗</p>]]></content>
+    <content type="html"><![CDATA[<p>喂喂？看得到吗<br>头像链接：<a href="https://seikim.com/i/2022/07/08/p67j1l.jpg">https://seikim.com/i/2022/07/08/p67j1l.jpg</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;喂喂？看得到吗&lt;/p&gt;
+    <summary type="html">&lt;p&gt;喂喂？看得到吗&lt;br&gt;头像链接：&lt;a href=&quot;https://seikim.com/i/2022/07/08/p67j1l.jpg&quot;&gt;https://seikim.com/i/2022/07/08/p67j1l.jpg&lt;/a&gt;&lt;/p&gt;
 </summary>
       
     
