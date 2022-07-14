@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-11T07:47:49.604Z</updated>
+  <updated>2022-07-13T14:29:03.466Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python学习笔记</title>
+    <link href="http://example.com/2022/07/13/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2022/07/13/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-07-13T11:53:07.000Z</published>
+    <updated>2022-07-13T14:29:03.466Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="HDU短学期Python学习笔记"><a href="#HDU短学期Python学习笔记" class="headerlink" title="HDU短学期Python学习笔记"></a>HDU短学期Python学习笔记</h1><h2 id="Python数据分析"><a href="#Python数据分析" class="headerlink" title="Python数据分析"></a>Python数据分析</h2><h3 id="NumPy的数组对象-ndarray"><a href="#NumPy的数组对象-ndarray" class="headerlink" title="NumPy的数组对象:ndarray"></a>NumPy的数组对象:ndarray</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">//约定的别名</span><br></pre></td></tr></table></figure><p><strong>ndarray</strong> 是一个N维数组对象<br>例: 计算 A^2 + B^3 ,其中,A和B是一维数组</p><p>这是常规数组的代码</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">pySum</span>():</span><br><span class="line">    a=[<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">    b=[<span class="number">9</span>,<span class="number">8</span>,<span class="number">7</span>,<span class="number">6</span>,<span class="number">5</span>]</span><br><span class="line">    c=[]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)):</span><br><span class="line">        c.append(a[i]**<span class="number">2</span> + b[i]**<span class="number">3</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line"><span class="built_in">print</span>(pySum())</span><br></pre></td></tr></table></figure><p>这是使用了 <strong>ndarray</strong> 之后的</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">npSum</span>():</span><br><span class="line">    a=np.array([<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line">    b=np.array([<span class="number">9</span>,<span class="number">8</span>,<span class="number">7</span>,<span class="number">6</span>,<span class="number">5</span>])</span><br><span class="line">    c=a**<span class="number">2</span>+b**<span class="number">3</span></span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line"><span class="built_in">print</span>(npSum())</span><br></pre></td></tr></table></figure><p><strong>很明显，ndarray优化掉了循环计算这一步，在大规模运算中表现得更为显著</strong></p><h3 id="ndarray的属性"><a href="#ndarray的属性" class="headerlink" title="ndarray的属性"></a><strong>ndarray</strong>的属性</h3><table><thead><tr><th>属性</th><th align="left">说明</th></tr></thead><tbody><tr><td>.ndim</td><td align="left">秩，即轴的数量或维度的数量</td></tr><tr><td>.shape</td><td align="left">ndarray对象的尺度，对于矩阵,n行m列</td></tr><tr><td>.size</td><td align="left">ndarray对象元素的个数，相当于.shape中n*m的值</td></tr><tr><td>.dtype</td><td align="left">ndarrary对象的元素类型</td></tr><tr><td>.itemsize</td><td align="left">ndarray对象中每个元素的大小，以字节为单位</td></tr></tbody></table><h4 id="ndarray的元素类型-1-2-3"><a href="#ndarray的元素类型-1-2-3" class="headerlink" title="ndarray的元素类型(1)(2)(3)"></a><strong>ndarray</strong>的元素类型(1)(2)(3)</h4><p>码的累死,自己看去 <a href="https://www.icourse163.org/learn/BIT-1001870002?tid=1467488489#/learn/content?type=detail&id=1248960096&cid=1276245179">ndarray</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;HDU短学期Python学习笔记&quot;&gt;&lt;a href=&quot;#HDU短学期Python学习笔记&quot; class=&quot;headerlink&quot; title=&quot;HDU短学期Python学习笔记&quot;&gt;&lt;/a&gt;HDU短学期Python学习笔记&lt;/h1&gt;&lt;h2 id=&quot;Python数据分</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Markdown语法</title>
