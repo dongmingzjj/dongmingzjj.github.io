@@ -1,3 +1,5 @@
+http://example.com/about/index.html
+http://example.com/about/bok.html
 http://example.com/2022/07/13/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
 http://example.com/2022/07/11/Markdown%E8%AF%AD%E6%B3%95/
 http://example.com/2022/07/06/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/
